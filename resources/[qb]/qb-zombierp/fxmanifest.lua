@@ -4,7 +4,7 @@ lua54 'yes'
 
 author 'GitHub Copilot'
 description 'QB-Core ZombieRP Server'
-version '1.0.0'
+version '1.1.0'
 
 shared_scripts {
   'config.lua',
@@ -20,7 +20,10 @@ server_scripts {
 }
 
 files {
-  'html/*'
+  'html/*.html',
+  'html/*.css'
 }
+
+ui_page 'html/index.html'
 
 dependency 'qb-core'
